@@ -23,12 +23,12 @@ app.post("/validarIniciacao", urlEncodedParser, function(req, res) {
 	// Verifica erro na matrícula
 	if (isNaN(parseFloat(matricula)) || !isFinite(matricula) ||
 			matricula.length < 9 || matricula.length > 10) {
-		erroMatricula = "* 'matrícula' deve ser um número com 9 ou 10 dígitos";
+		erroMatricula = "* 'Matrícula' deve ser um número com 9 ou 10 dígitos";
 	}
 
 	// Verifica erro no nome
 	if (nome.replace(/^\s+|\s+$/g,"").length === 0 || nome === null) {
-		erroNome = "* 'nome' não pode ser vazio";
+		erroNome = "* 'Nome' não pode ser vazio";
 	}
 
 	// Envia resposta em formato JSON
@@ -51,12 +51,12 @@ app.post("/validarIdentificacao", urlEncodedParser, function(req, res) {
 
 	// Valida nomePai
 	if (nomePai.replace(/^\s+|\s+$/g,"").length === 0 || nomePai === null) {
-		erroNomePai = "* 'nome do pai' não pode ser vazio";
+		erroNomePai = "* 'Nome do pai' não pode ser vazio";
 	}
 
 	// Valida nome
 	if (nomeMae.replace(/^\s+|\s+$/g,"").length === 0 || nomeMae === null) {
-		erroNomeMae = "* 'nome da mãe' não pode ser vazio";
+		erroNomeMae = "* 'Nome da mãe' não pode ser vazio";
 	}
 
 	// Envia resposta em formato JSON
@@ -82,7 +82,7 @@ app.post("/validarIngresso", urlEncodedParser, function(req, res) {
 	var dataAtual = new Date();
 	if (isNaN(parseFloat(anoIngresso)) || !isFinite(anoIngresso) ||
 			anoIngresso < 1999 || anoIngresso > dataAtual.getFullYear()) {
-		erroAnoIngresso = "* 'ano de ingresso' deve ser um número entre 1999 e ano atual";
+		erroAnoIngresso = "* 'Ano de ingresso' deve ser um número entre 1999 e ano atual";
 	}
 
 	// Envia resposta em formato JSON
