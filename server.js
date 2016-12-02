@@ -51,7 +51,7 @@ app.post("/validarIdentificacao", urlEncodedParser, function(req, res) {
 
 	// Valida nomePai
 	if (nomePai.replace(/^\s+|\s+$/g,"").length === 0 || nomePai === null) {
-		erroNomePai = "* nome do pai' não pode ser vazio";
+		erroNomePai = "* 'nome do pai' não pode ser vazio";
 	}
 
 	// Valida nome
