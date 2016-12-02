@@ -1,0 +1,25 @@
+input[type="text"] {
+    border: 1px solid #ddd;
+    padding: 4px 8px;
+}
+
+input[type="text"]:focus {
+    border:1px solid #000;
+}
+
+button[type="submit"] {
+    font-weight: bold;
+    padding: 4px 8px;
+    border:1px solid #000;
+    border-radius: 1em;
+    background: #3b5998;
+    color:#fff;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}

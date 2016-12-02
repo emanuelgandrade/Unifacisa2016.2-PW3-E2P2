@@ -1,0 +1,29 @@
+{
+  "name": "unifacisa-pw3-e2p2",
+  "version": "1.0.0",
+  "description": "Unifacisa 2016.2 - Projeto PW3 - E2P2",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emanuelgandrade/Unifacisa2016.2-PW3-E2P2.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Emanuel G. Andrade <emanuelgandrade>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emanuelgandrade/Unifacisa2016.2-PW3-E2P2/issues"
+  },
+  "homepage": "https://github.com/emanuelgandrade/Unifacisa2016.2-PW3-E2P2#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  },
+  "engines": {
+    "node": "6.9.1"
+  }
+}

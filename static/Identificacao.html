@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Identificação</title>
+        <script type="text/javascript" charset="utf-8" src="identificacao.js"></script>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body onload="atualizarForm()">
+        <form>
+            <h2>Identificação</h2>
+            <br><label for="txtMatricula">Matrícula:</label>
+            <br><input type="text" id="matrícula" name="campoMatricula" size="40" disabled/>
+            <br><label for="txtNome">Nome:</label>
+            <br><input type="text" id="nome" name="campoNome" size="40" disabled/>
+            <br><label for="txtPai">Nome do pai:</label>
+            <br><input type="text" id="nomePai" name="nomePai" size="40"/>
+            <label id="erroNomePai" for="erroNomePai" style="color:#FF0000"></label>
+            <br><label for="txtMae">Nome da Mãe:</label>
+            <br><input type="text" id="nomeMae" name="nomeMae" size="40"/>
+            <label id="erroNomeMae" for="erroNomeMae" style="color:#FF0000"></label>
+            <br><br><button type="submit" onclick="validarIdentificacao(event)">Próximo</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Ingresso</title>
+        <script type="text/javascript" charset="utf-8" src="ingresso.js"></script>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <form>
+            <h2>Forma de ingresso</h2>
+            <br><label for="txtVia">Via:</label>
+            <input type="radio" name="viaIngresso" id="vestibular" value="Vestibular" checked/>
+            <label for="vestibular">Vestibular |</label>
+            <input type="radio" name="viaIngresso" id="transferencia" value="Transferência"/>
+            <label for="transferencia">Transferência |</label>
+            <input type="radio" name="viaIngresso" id="graduado" value="Graduado"/>
+            <label for="graduado">Graduado |</label>
+            <input type="radio" name="viaIngresso" id="mudancaDeCurso" value="Mudança de Curso"/>
+            <label for="mudancaDeCurso">Mudança de curso</label>
+            <br><br><label for="txtAno">Ano: </label>
+            <br><input type="text" id="anoIngresso" name="anoIngresso"/>
+            <label id="erroAnoIngresso" for="erroAnoIngressoValido" style="color:#FF0000"></label>
+            <br><br><button type="submit" onclick="validarIngresso(event)">Concluir</button>
+        </form>
+    </body>
+</html>
